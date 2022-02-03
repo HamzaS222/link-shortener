@@ -1,0 +1,257 @@
+@import "utilities";
+/////////////////////// variables
+$Cyan: hsl(180, 66%, 49%);
+$Dark_Violet: hsl(257, 27%, 26%);
+$Red: hsl(0, 87%, 67%);
+$Gray: hsl(0, 0%, 75%);
+$Grayish_Violet: hsl(257, 7%, 63%);
+$Dark_Blue: hsl(255, 11%, 22%);
+$Dark_Violet: hsl(260, 8%, 14%);
+
+//////////////////////  styling
+body {
+  font-size: 18px;
+  font-weight: 500, 700;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  & a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+.btn {
+  background-color: $Cyan;
+  padding: 0.6rem 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+a {
+  cursor: pointer;
+  padding-top: 0.5rem;
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+nav .container {
+  text-align: center;
+  font-size: 1rem;
+  padding: 0rem 1rem;
+  color: $Gray;
+  #logo {
+    padding: 1rem;
+    margin-top: 0.2rem;
+    padding-right: 2rem;
+  }
+  .navbar {
+    align-items: center;
+    font-weight: bold;
+    width: 100%;
+    justify-content: space-between;
+    .menu {
+      align-items: center;
+      div {
+        padding: 0.6rem 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $Cyan;
+          color: white;
+        }
+      }
+    }
+    .logging {
+      padding-right: 2rem;
+      div {
+        padding: 0.6rem 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover {
+          background-color: $Cyan;
+          color: white;
+        }
+      }
+    }
+  }
+}
+#hero .container {
+  margin-top: 2rem;
+  div {
+    width: 50%;
+    margin: 2rem;
+    h1 {
+      font-size: 2rem;
+      padding-top: 2rem;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      font-weight: bolder;
+    }
+    p {
+      color: $Gray;
+    }
+    .btn {
+      margin-top: 1rem;
+      border-radius: 2rem;
+    }
+  }
+  img {
+    width: 50%;
+    margin: 2rem;
+  }
+}
+#shorten_box .container .box {
+  z-index: 3;
+  justify-content: space-between;
+  margin: auto;
+  background: url("./images/bg-shorten-desktop.svg");
+  background-color: $Dark_Blue;
+  height: 14vh;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  input {
+    height: 3rem;
+    margin: 0 0.5rem;
+    padding: 1rem;
+    width: 50%;
+    border: none;
+    border-radius: 6px;
+  }
+  button {
+    height: 3rem;
+    padding: 1rem;
+    width: 20%;
+    border-radius: 6px;
+  }
+}
+#advanced {
+  background-color: #f0eaea;
+
+  .container {
+    z-index: -2;
+    padding: 4rem 1rem 6rem 2rem;
+    margin: auto;
+    margin-top: 3rem;
+    h1 {
+      font-weight: bold;
+      text-align: center;
+    }
+    > p {
+      padding: 1rem;
+      font-size: 1rem;
+      color: $Gray;
+      width: 50%;
+      margin: auto;
+      text-align: center;
+    }
+    .statistics {
+      margin-top: 3rem;
+      div {
+        position: relative;
+        background-color: white;
+        width: 25%;
+        border-radius: 10px;
+        padding: 2rem 1rem 1rem 1rem;
+        margin: auto;
+        i img {
+          position: absolute;
+          top: -1.8rem;
+          left: 1rem;
+          background: $Dark_Blue;
+          padding: 0.5rem;
+          border-radius: 50%;
+          width: 50px;
+        }
+      }
+      & div:nth-child(1) {
+        left: 3rem;
+      }
+      & div:nth-child(2) {
+        top: 2rem;
+      }
+      & div:nth-child(3) {
+        top: 4rem;
+        left: -3rem;
+      }
+      h3 {
+        padding: 0.8rem 0rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+#boost {
+  background: url("./images/bg-shorten-desktop.svg");
+  background-color: $Dark_Blue;
+  .container {
+    color: white;
+    text-align: center;
+    margin: auto;
+    // height: 14vh;
+    width: 100%;
+    padding: 2rem;
+    h1 {
+      font-size: 2rem;
+      padding: 1rem;
+    }
+    button {
+      padding: 0.8rem 2rem;
+      border-radius: 2rem;
+    }
+  }
+}
+footer {
+  background-color: $Dark_Violet;
+
+  .container {
+    justify-content: space-between;
+    padding: 2rem;
+    color: white;
+    .logo {
+      margin-top: 2rem;
+    }
+    .features {
+      a {
+        display: block;
+        color: $Gray;
+      }
+    }
+    .resources {
+      a {
+        display: block;
+        color: $Gray;
+      }
+    }
+    .company {
+      a {
+        display: block;
+        color: $Gray;
+      }
+    }
+    .social_media {
+      margin-top: 2rem;
+      i img {
+        padding: 0 0.7rem;
+        &:hover {
+          opacity: 0.8;
+          transition: all 0.2s ease-in;
+          transform: translateX(0.1rem);
+        }
+      }
+    }
+  }
+}
+.attribution {
+  background-color: $Dark_Violet;
+  color: white;
+}
